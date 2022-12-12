@@ -1,0 +1,147 @@
+{
+  "config": {
+    "nr_dice": 1,
+    "nr_answers": 2,
+    "nr_answer_outcomes": 2,
+    "max_depth": 2,
+    "nr_nodes": 5,
+    "nr_leaves": 4
+  },
+  "game": [
+    {
+      "node_id": "d00n00",
+      "is_leaf": false,
+      "depth": 0,
+      "situation_description": "You are in a forest and you see the shadow of a dragon approaching on the path. You look up and see the enourmous red beast, all claws and fire.",
+      "option_texts": {
+        "d00n00_OPT00": "Use magic to create a protective shield around yourself, in an attempt to block the dragon's attacks.",
+        "d00n00_OPT01": "Try to communicate with the dragon, using your knowledge of dragon language or magic to establish a dialogue with the beast and understand its intentions."
+      },
+      "option_to_outcome_mapping": {
+        "d00n00_OPT00": [
+          "d00n00_OPT00_OUT00",
+          "d00n00_OPT00_OUT01"
+        ],
+        "d00n00_OPT01": [
+          "d00n00_OPT01_OUT00",
+          "d00n00_OPT01_OUT01"
+        ]
+      },
+      "final_outcome_texts": null,
+      "next_node_ids": {
+        "d00n00_OPT00_OUT00": "d00n00_d01n00",
+        "d00n00_OPT00_OUT01": "d00n00_d01n01",
+        "d00n00_OPT01_OUT00": "d00n00_d01n02",
+        "d00n00_OPT01_OUT01": "d00n00_d01n03"
+      }
+    },
+    {
+      "node_id": "d00n00_d01n00",
+      "is_leaf": true,
+      "depth": 1,
+      "situation_description": "You quickly focus your magical energy and create a shield around yourself, just in time to block the dragon's flames. The dragon snarls in frustration and circles around you, looking for a way to break through your defenses. You must maintain your concentration and continue to reinforce the shield, while looking for an opportunity to counterattack or escape. Then you see a good opportunity...",
+      "option_texts": {
+        "d00n00_d01n00_OPT00": "Use your magical abilities to create a powerful force field around the dragon, trapping it and preventing it from attacking you further.",
+        "d00n00_d01n00_OPT01": "Use your magical abilities to summon powerful allies, the centaurs, to assist you in defeating the dragon."
+      },
+      "option_to_outcome_mapping": {
+        "d00n00_d01n00_OPT00": [
+          "d00n00_d01n00_OPT00_OUT00",
+          "d00n00_d01n00_OPT00_OUT01"
+        ],
+        "d00n00_d01n00_OPT01": [
+          "d00n00_d01n00_OPT01_OUT00",
+          "d00n00_d01n00_OPT01_OUT01"
+        ]
+      },
+      "final_outcome_texts": {
+        "d00n00_d01n00_OPT00_OUT00": "Your force field is successful in trapping the dragon, and you are able to negotiate with it to obtain a gift in exchange for releasing it.",
+        "d00n00_d01n00_OPT00_OUT01": "Your force field is successful in trapping the dragon, but it becomes enraged and thrashes about, causing damage to the surrounding area. In the resulting chaos, any potential gift is lost or destroyed.",
+        "d00n00_d01n00_OPT01_OUT00": "After defeating the dragon, the centaurs offer you a gift as a token of their gratitude for summoning them to assist in the battle.",
+        "d00n00_d01n00_OPT01_OUT01": "During the battle with the dragon, the centaurs are injured or killed, and are unable to offer you a gift. You are left to mourn their loss and deal with the aftermath of the battle."
+      },
+      "next_node_ids": null
+    },
+    {
+      "node_id": "d00n00_d01n01",
+      "is_leaf": true,
+      "depth": 1,
+      "situation_description": "Your shield successfully blocks the dragon's flames, but the impact of the attack knocks you off balance and you stumble backwards. The dragon takes advantage of this opening and lunges forward, grabbing you in its powerful jaws. You struggle and try to break free, but the dragon's grip is too strong. Suddenly the dragon grabs you and flings you far away over the trees where you plummet into the forest ground.",
+      "option_texts": {
+        "d00n00_d01n01_OPT00": "Use your magic to heal any injuries and regain your strength, then try to find your way back to the dragon and continue the fight.",
+        "d00n00_d01n01_OPT01": "go have a look at the unicorn you see lying under a tree a bit down the road"
+      },
+      "option_to_outcome_mapping": {
+        "d00n00_d01n01_OPT00": [
+          "d00n00_d01n01_OPT00_OUT00",
+          "d00n00_d01n01_OPT00_OUT01"
+        ],
+        "d00n00_d01n01_OPT01": [
+          "d00n00_d01n01_OPT01_OUT00",
+          "d00n00_d01n01_OPT01_OUT01"
+        ]
+      },
+      "final_outcome_texts": {
+        "d00n00_d01n01_OPT00_OUT00": "As you use your magic to heal your injuries and regain your strength, you become more determined and focused. You are able to use your magical abilities to track the dragon and find your way back to it. When you face the dragon again he is impressed and gives you a gift instead of a fight.",
+        "d00n00_d01n01_OPT00_OUT01": "",
+        "d00n00_d01n01_OPT01_OUT00": "As you use your magic to heal your injuries,When you approach the unicorn, you see that it is injured and in need of help. You use your magical abilities to heal the unicorn, and in gratitude, it offers you a gift, such as a vial of its healing tears or a strand of its enchanted hair.",
+        "d00n00_d01n01_OPT01_OUT01": "When you approach the unicorn, you see that it is not injured, but rather sleeping. You try to gently wake the unicorn, but it is startled and defensive, and it uses its magic to attack you. You are unable to obtain a gift from the unicorn."
+      },
+      "next_node_ids": null
+    },
+    {
+      "node_id": "d00n00_d01n02",
+      "is_leaf": true,
+      "depth": 1,
+      "situation_description": "You focus your mind and speak the ancient words of dragon language, calling out to the beast. To your surprise, the dragon responds, and a telepathic conversation begins. You learn that the dragon was sent by a powerful wizard to deliver a message: Wait here for him, then the dragon flies away, leaving you to contemplate the implications of what you have just heard.",
+      "option_texts": {
+        "d00n00_d01n02_OPT00": "Wait for the wizard to arrive, as instructed by the dragon.",
+        "d00n00_d01n02_OPT01": "Ignore the dragon's message and continue on your journey, leaving the area before the wizard arrives."
+      },
+      "option_to_outcome_mapping": {
+        "d00n00_d01n02_OPT00": [
+          "d00n00_d01n02_OPT00_OUT00",
+          "d00n00_d01n02_OPT00_OUT01"
+        ],
+        "d00n00_d01n02_OPT01": [
+          "d00n00_d01n02_OPT01_OUT00",
+          "d00n00_d01n02_OPT01_OUT01"
+        ]
+      },
+      "final_outcome_texts": {
+        "d00n00_d01n02_OPT00_OUT00": "When the wizard arrives, he thanks you for following the dragon's instructions and rewards you with a valuable gift as a sign of his gratitude.",
+        "d00n00_d01n02_OPT00_OUT01": "When the wizard arrives, he is angry that you waited for him as instructed by the dragon and punishes you for your obedience by taking away the gift he was planning to give you",
+        "d00n00_d01n02_OPT01_OUT00": "As you continue on your journey, you encounter the wizard, who is angry that you did not follow the dragon's instructions and wait for him. He punishes you for your disobedience, and the encounter leaves you shaken and upset.",
+        "d00n00_d01n02_OPT01_OUT01": "You successfully avoid the wizard by continuing on your journey, in the next village it turns out you saved them by ignoring the wizard and receive a gift"
+      },
+      "next_node_ids": null
+    },
+    {
+      "node_id": "d00n00_d01n03",
+      "is_leaf": true,
+      "depth": 1,
+      "situation_description": "You attempt to communicate with the dragon, but your knowledge of dragon language is not strong enough to establish a clear connection. The dragon snarls and breathes fire, forcing you to back away and defend yourself. You must find another way to understand the dragon's intentions and determine how to handle the situation.",
+      "option_texts": {
+        "d00n00_d01n03_OPT00": "Since this appears to not be a very smart dragon you try to steal its diamond",
+        "d00n00_d01n03_OPT01": "Try to touch foreheads with the dragon and try again to have a better chance at a connection"
+      },
+      "option_to_outcome_mapping": {
+        "d00n00_d01n03_OPT00": [
+          "d00n00_d01n03_OPT00_OUT00",
+          "d00n00_d01n03_OPT00_OUT01"
+        ],
+        "d00n00_d01n03_OPT01": [
+          "d00n00_d01n03_OPT01_OUT00",
+          "d00n00_d01n03_OPT01_OUT01"
+        ]
+      },
+      "final_outcome_texts": {
+        "d00n00_d01n03_OPT00_OUT00": "You successfully steal the diamond from the dragon, and it remains unaware of your theft. You now have the valuable gem in your possession. You can grab a gift.",
+        "d00n00_d01n03_OPT00_OUT01": "The dragon notices your attempt to steal its diamond and becomes enraged. It attacks you, and in the struggle, the diamond is lost or destroyed.",
+        "d00n00_d01n03_OPT01_OUT00": "The dragon, surprised by your unusual approach, calms down and allows you to establish a connection. Through this connection, you are able to understand the dragon's intentions and it offers a gift as a sign of goodwill.",
+        "d00n00_d01n03_OPT01_OUT01": "The dragon, offended by your attempt to touch its forehead, becomes even more aggressive and attacks you. In the resulting struggle you get very burned. You do not receive a gift."
+      },
+      "next_node_ids": null
+    }
+  ]
+}
